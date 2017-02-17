@@ -1,10 +1,6 @@
 	var ctx = document.getElementById("ctx").getContext("2d");
 	ctx.font = '30px Arial';
 
-	var image = {};
-	image.player = new Image();
-	image.player.src = '/client/img/player.png';
-
 	var socket = io();
 
 	socket.on('newPositions',function(data){
