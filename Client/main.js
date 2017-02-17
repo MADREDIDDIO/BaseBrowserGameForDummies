@@ -5,7 +5,7 @@ var ctx = document.getElementById("ctx").getContext("2d"),
     //instauro un canele di comunicazione con il server
     socket = io(),
     //Futuro vettore di oggetti di tipo Player in gioco
-    playerInGame = null;
+    playerInGame = [];
 //Quando viene inviato l'aggiornamento dei giocatori in gioco dal server..
 socket.on('uploadPlayers',function(data){
   //.. i dati vengono processati..
